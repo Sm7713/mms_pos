@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <!-- <fieldset> 
+            <legend>Sing In</legend> 
+            <input type="text" name="" class="text" id="">
+            <div class="check-container">
+                <div class="check"></div>
+                <div class="word">xc</div>
+            </div>
+            <input type="password" name="" id="pass" >
+            <input type="checkbox" name="" id="" class="check">
+            <p class="pass"></p>
+            <button>Click</button>
+        </fieldset> -->
+        <!-- <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1> -->
+        <img src="./03.JPG" width="300px" alt="">
+        <img src="./03.JPG" width="300px" alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <img src="./03.JPG" width="300px"  alt="">
+        <p class="resualt"></p>
+    </div>
+    
+    <!-- <script src="./J Query/jquery-3.6.0.min.js"></script> -->
+    <script>
+        $('document').ready(function(){
+    $('.text').keyup(function(){
+        var $val=this.value.length;
+        $('.check').text($val);
+        $('.check').show(500);
+       if($val<1)
+       {
+        $('.check').slideUp(500);
+       }
+
+
+
+    //    $('.word').show(function(){
+    //        if(this.value.CharAt(6))
+    //        console.log(this.value.charAt(6));
+    //    })
+   });
+$(':checkbox').click(function(){
+if($(this).checked)
+{
+    $(':password').attr('type','text');
+}else{
+    $(':password').attr('type','password');
+}
+
+})
+   
+});
+
+let val=document.querySelector('.check');
+val.addEventListener('click',() =>{
+    let pass=document.querySelector('#pass');
+    if(val.checked)
+    pass.setAttribute('type','text')
+    else
+    pass.setAttribute('type','password');
+})
+    </script>
+</body>
+</html>
